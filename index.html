@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Formatter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">JSON Formatter</h1>
+      </header>
+      <section class="text-container">
+        <textarea
+          class="large-area large-area-input"
+          placeholder="Enter your JSON here..."
+        >
+{
+         “abcd”: “123456789”,
+         “efghi”: “101112131”,
+}</textarea
+        >
+        <div class="controls">
+          <button class="btn-control btn-control--format">Format</button
+          ><button class="btn-control btn-control--minify">Minify</button>
+        </div>
+        <textarea
+          class="large-area large-area-output"
+          placeholder="Enter your JSON here..."
+        ></textarea>
+      </section>
+    </div>
+  </body>
+</html>

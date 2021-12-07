@@ -1,0 +1,103 @@
+:root {
+  --c-text-primary: #eeeeee;
+  --bk-c-body: #1a1a1a;
+  --bk-c-textarea: #4d4d4d;
+  --bk-c-textarea-hover: #666666;
+  --bk-c-btn-format: #ff6868;
+  --bk-c-btn-minify: #8f68ff;
+  --bradius-textarea: 0.7rem;
+  --c-textarea: #fff;
+  --text-fw-regular: 400;
+  --text-fw-bold: 700;
+  --text-fs-normal: 2rem;
+  --text-fs-big: 6rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bk-c-body);
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--text-fw-regular);
+  font-size: var(--text-fs-normal);
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--c-text-primary);
+  font-size: var(--text-fs-big);
+  text-align: center;
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: 1fr 10rem 1fr;
+  align-items: center;
+  gap: 2rem;
+  height: 90vh;
+}
+
+.large-area {
+  height: 80%;
+  padding: 2rem;
+
+  color: var(--c-textarea);
+  background-color: var(--bk-c-textarea);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--text-fw-bold);
+  font-size: 2rem;
+  letter-spacing: 0.22rem;
+  line-height: 1.3;
+
+  outline: none;
+  border-radius: var(--bradius-textarea);
+
+  transition: background 0.3s, color 0.3s;
+}
+
+.large-area:hover,
+.large-area:active {
+  background: var(--bk-c-textarea-hover);
+}
+
+/* BTN CONTROLS */
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 6rem;
+}
+
+.btn-control {
+  padding: 2rem 1.5rem;
+  border-radius: var(--bradius-textarea);
+
+  cursor: pointer;
+  border-style: none;
+
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.btn-control--format {
+  background-color: var(--bk-c-btn-format);
+}
+
+.btn-control--minify {
+  background-color: var(--bk-c-btn-minify);
+}
