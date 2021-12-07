@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Javascript -->
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -20,15 +23,14 @@
         <h1 class="title">JSON Formatter</h1>
       </header>
       <section class="text-container">
+        <!-- {
+                 “abcd”: “123456789”,
+                 “efghi”: “101112131”,
+        } -->
         <textarea
           class="large-area large-area-input"
           placeholder="Enter your JSON here..."
-        >
-{
-         “abcd”: “123456789”,
-         “efghi”: “101112131”,
-}</textarea
-        >
+        ></textarea>
         <div class="controls">
           <button class="btn-control btn-control--format">Format</button
           ><button class="btn-control btn-control--minify">Minify</button>
